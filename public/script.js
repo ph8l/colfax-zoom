@@ -36,7 +36,7 @@ if (!navigator.getUserMedia) {
 }
 navigator.mediaDevices
   .getUserMedia({
-    audio: true,
+    //audio: true,
     video: true,
   })
   .then((stream) => {
