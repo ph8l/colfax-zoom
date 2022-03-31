@@ -19,7 +19,7 @@ showChat.addEventListener("click", () => {
   document.querySelector(".header__back").style.display = "block";
 });
 
-const user = prompt("Enter your name");
+const user = "joe"//prompt("Enter your name");
 
 var peer = new Peer(undefined, {
   path: "/peerjs",
@@ -28,12 +28,6 @@ var peer = new Peer(undefined, {
 });
 
 let myVideoStream;
-if (!navigator.getUserMedia) {
-  navigator.getUserMedia = navigator.getUserMedia ||
-                           navigator.webkitGetUserMedia ||
-                           navigator.mozGetUserMedia ||
-                           navigator.msGetUserMedia;
-}
 navigator.mediaDevices
   .getUserMedia({
     audio: true,
